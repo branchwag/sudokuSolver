@@ -29,7 +29,7 @@ public class SudokuSolver {
 			for (int column = 0; column < GRID_SIZE; column++) {
 				System.out.print(board[row][column]);
 			}
-			System.put.println();
+			System.out.println();
 		}
 	}
 
