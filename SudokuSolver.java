@@ -58,7 +58,7 @@ public class SudokuSolver {
 
 		for (int i = localBoxRow; i < localBoxRow + 3; i++) {
 			for (int j = localBoxColumn; j < localBoxColumn + 3; j++) {
-				if (board[i][j] == number {
+				if (board[i][j] == number) {
 					return true;
 				}
 			}
