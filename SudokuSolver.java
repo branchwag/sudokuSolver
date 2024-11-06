@@ -13,8 +13,24 @@ public class SudokuSolver {
 		{0, 0, 9, 7, 0, 0, 0, 0, 5},
 		{0, 0, 0, 2, 0, 0, 0, 0, 0},
 		{0, 0, 7, 0, 4, 0, 2, 0, 3}
-
 		};
+
+		if (solveBoard(board)) {
+			System.out.println("Solved successfully");
+		} else {
+			System.out.println("Unsolvable board");
+		}
+
+		printBoard(board);
+	}
+
+	private static void printBoard(int[][] board) {
+		for (int row = 0; row < GRID_SIZE; row++) {
+			for (int column = 0; column < GRID_SIZE; column++) {
+				System.out.print(board[row][column]);
+			}
+			System.put.println();
+		}
 	}
 
         private static boolean isNumberInRow(int[][] board, int number, int row) {
